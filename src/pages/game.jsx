@@ -10,7 +10,9 @@ import AsideNav from "../components/aside-nav";
 import "../animate.css";
 
 const Game = ({ defaultUserObj, toggleLogin }) => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('mdc_wordle_user')) || defaultUserObj)
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("mdc_wordle_user")) || defaultUserObj
+  );
   const [loggedIn, setLoggedIn] = useState(user.authInfo.isAuthenticated);
 
   const existingUser = user.gameIndex > 0 ? true : false;
@@ -237,7 +239,7 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
   function toggleAside() {
     setIsAsideClosed((prevIsAsideClosed) => {
       return !prevIsAsideClosed;
-    })
+    });
   }
 
   function toggleHardMode() {
@@ -373,7 +375,7 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
           }
         }
         localStorage.setItem("mdc_wordle_user", JSON.stringify(user));
-        window.location.reload()
+        window.location.reload();
       }, 3500);
       // TO DO PATCH USER OR REDIRECT TO LOGIN
     } else if (currentAttempt === 6) {
@@ -531,11 +533,11 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
       ...user,
       preferences: {
         ...user.preferences,
-        hardMode: isHardMode
-      }
+        hardMode: isHardMode,
+      },
     };
 
-    localStorage.setItem('mdc_wordle_user', JSON.stringify(newData))
+    localStorage.setItem("mdc_wordle_user", JSON.stringify(newData));
   }, [isHardMode]);
 
   useEffect(() => {
@@ -543,11 +545,11 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
       ...user,
       preferences: {
         ...user.preferences,
-        darkMode: isDarkMode
-      }
+        darkMode: isDarkMode,
+      },
     };
 
-    localStorage.setItem('mdc_wordle_user', JSON.stringify(newData))
+    localStorage.setItem("mdc_wordle_user", JSON.stringify(newData));
   }, [isDarkMode]);
 
   useEffect(() => {
@@ -555,11 +557,11 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
       ...user,
       preferences: {
         ...user.preferences,
-        contrastMode: isHighContrastMode
-      }
+        contrastMode: isHighContrastMode,
+      },
     };
 
-    localStorage.setItem('mdc_wordle_user', JSON.stringify(newData))
+    localStorage.setItem("mdc_wordle_user", JSON.stringify(newData));
   }, [isHighContrastMode]);
 
   return (
@@ -574,8 +576,18 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
       ) : (
         <></>
       )}
-      <AsideNav isAsideClosed={isAsideClosed} defaultUserObj={defaultUserObj} closeAside={toggleAside} loggedIn={loggedIn} toggleLogin={toggleLogin}/>
-      <StatsModal isClosed={modalHidden} defaultUserObj={defaultUserObj} closeModal={closeModal} />
+      <AsideNav
+        isAsideClosed={isAsideClosed}
+        defaultUserObj={defaultUserObj}
+        closeAside={toggleAside}
+        loggedIn={loggedIn}
+        toggleLogin={toggleLogin}
+      />
+      <StatsModal
+        isClosed={modalHidden}
+        defaultUserObj={defaultUserObj}
+        closeModal={closeModal}
+      />
       <SettingsModal
         isClosed={isSettingsClosed}
         closeModal={toggleSettings}
@@ -592,6 +604,7 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
         isHighContrastMode={isHighContrastMode}
       />
       <div className="page-content">
+      <div className="container">
         <div className="game-window">
           {guessRowsArr.map((attempt, i) => {
             return (
@@ -631,6 +644,7 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
               </div>
             );
           })}
+        </div>
         </div>
       </div>
     </div>

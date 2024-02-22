@@ -1,7 +1,7 @@
 {
   "name": "wordle-ui",
   "version": "0.1.0",
-  "homepage": "https://github.com/matthewcourtneydev/wordle-ui",
+  "homepage": "https://matthewcourtneydev.github.io/wordle-ui/",
   "private": true,
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
