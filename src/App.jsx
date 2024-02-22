@@ -58,7 +58,7 @@ function App() {
       <UserContext.Provider value={userState}>
         <Routes>
           <Route
-            path={"/"}
+            exact path={"/wordle-ui"}
             element={
               <Home
                 defaultUserObj={defaultUserObj}

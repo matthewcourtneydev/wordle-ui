@@ -2,7 +2,7 @@
   "name": "wordle-ui",
   "version": "0.1.0",
   "homepage": "https://matthewcourtneydev.github.io/wordle-ui/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
     "@testing-library/jest-dom": "^5.17.0",
