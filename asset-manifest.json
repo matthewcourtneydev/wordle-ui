@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/matthewcourtneydev/wordle-ui/static/css/main.bec44d6f.css",
-    "main.js": "/matthewcourtneydev/wordle-ui/static/js/main.9779cd12.js",
-    "static/media/error.png": "/matthewcourtneydev/wordle-ui/static/media/error.45bdf36df83eddf36081.png",
-    "static/media/graph.png": "/matthewcourtneydev/wordle-ui/static/media/graph.bbc516a5667f107f4355.png",
-    "static/media/logo.webp": "/matthewcourtneydev/wordle-ui/static/media/logo.d50ae4bdd27ff0897e9d.webp",
-    "index.html": "/matthewcourtneydev/wordle-ui/index.html",
-    "main.bec44d6f.css.map": "/matthewcourtneydev/wordle-ui/static/css/main.bec44d6f.css.map",
-    "main.9779cd12.js.map": "/matthewcourtneydev/wordle-ui/static/js/main.9779cd12.js.map"
+    "main.css": "/wordle-ui/static/css/main.926a03a4.css",
+    "main.js": "/wordle-ui/static/js/main.33c74afc.js",
+    "static/media/error.png": "/wordle-ui/static/media/error.45bdf36df83eddf36081.png",
+    "static/media/graph.png": "/wordle-ui/static/media/graph.bbc516a5667f107f4355.png",
+    "static/media/logo.webp": "/wordle-ui/static/media/logo.d50ae4bdd27ff0897e9d.webp",
+    "index.html": "/wordle-ui/index.html",
+    "main.926a03a4.css.map": "/wordle-ui/static/css/main.926a03a4.css.map",
+    "main.33c74afc.js.map": "/wordle-ui/static/js/main.33c74afc.js.map"
   },
   "entrypoints": [
-    "static/css/main.bec44d6f.css",
-    "static/js/main.9779cd12.js"
+    "static/css/main.926a03a4.css",
+    "static/js/main.33c74afc.js"
   ]
 }
