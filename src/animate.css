@@ -1,0 +1,140 @@
+.error-shake {
+    animation: rowShake 1s 1;
+  }
+  
+  .correct-flip {
+      animation: correct-flip 1s 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .almost-flip {
+      animation: almost-flip 1s 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .correct-flip-contrast {
+      animation: correct-flip-contrast 1s 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .almost-flip-contrast {
+      animation: almost-flip-contrast 1s 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .wrong-flip {
+      animation: wrong-flip 1s 1;
+      animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes correct-flip {
+      0% {
+          transform: scaleY(1);
+          background-color: inherit;
+      } 
+      50% {
+          transform: scaleY(0);
+          background-color: rgb(100, 164, 100);
+          border: solid 1px rgb(100, 164, 100);
+          color: white;
+      }
+      100% {
+          transform: scaleY(1);
+          background-color: rgb(100, 164, 100);
+          border: solid 1px rgb(100, 164, 100);
+          color: white;
+      }
+  }
+  
+  @keyframes almost-flip {
+      0% {
+          transform: scaleY(1);
+          background-color: inherit;
+      } 
+      50% {
+          transform: scaleY(0);
+          background-color: rgb(221, 173, 0);
+          border: solid 1px rgb(221, 173, 0);
+          color: white;
+      }
+      100% {
+          transform: scaleY(1);
+          background-color: rgb(221, 173, 0);
+          border: solid 1px rgb(221, 173, 0);
+          color: white;
+      }
+  }
+  
+  @keyframes wrong-flip {
+      0% {
+          transform: scaleY(1);
+          background-color: inherit;
+      } 
+      50% {
+          transform: scaleY(0);
+          background-color: rgb(108, 101, 101);
+          border: solid 1px rgb(108, 101, 101);
+          color: white;
+      }
+      100% {
+          transform: scaleY(1);
+          background-color: rgb(108, 101, 101);
+          border: solid 1px rgb(108, 101, 101);
+          color: white;
+      }
+  }
+  /* $correct-orange: rgb(255, 130, 41);
+  $almost-blue: rgb(112, 225, 251); */
+  @keyframes correct-flip-contrast {
+      0% {
+          transform: scaleY(1);
+          background-color: inherit;
+      } 
+      50% {
+          transform: scaleY(0);
+          background-color: rgb(255, 130, 41);
+          border: solid 1px rgb(255, 130, 41);
+          color: white;
+      }
+      100% {
+          transform: scaleY(1);
+          background-color: rgb(255, 130, 41);
+          border: solid 1px rgb(255, 130, 41);
+          color: white;
+      }
+  }
+  
+  @keyframes almost-flip-contrast {
+      0% {
+          transform: scaleY(1);
+          background-color: inherit;
+      } 
+      50% {
+          transform: scaleY(0);
+          background-color: rgb(112, 225, 251);
+          border: solid 1px rgb(112, 225, 251);
+          color: white;
+      }
+      100% {
+          transform: scaleY(1);
+          background-color: rgb(112, 225, 251);
+          border: solid 1px rgb(112, 225, 251);
+          color: white;
+      }
+  }
+  
+  @keyframes rowShake {
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    75% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
