@@ -28,7 +28,12 @@ body {
 .App {
   font-family: $non-logo-font;
   font-weight: 300;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
 
+  
   .page {
     position: absolute;
     bottom: 0;
@@ -254,7 +259,7 @@ body {
       flex-direction: column;
       margin-top: 30px;
 
-      a {
+      button {
         background: none;
         padding: 10px;
         border-radius: 30px;
@@ -275,6 +280,8 @@ body {
   .game-page {
     overflow: hidden;
     background-color: $dark-grey-background;
+    max-width: 400px;
+    margin: auto;
 
     .page-content {
       padding-top: 10px;
@@ -1096,4 +1103,13 @@ body {
     background-color: $wrong-grey !important;
     color: $bright-white !important;
   }
+
+}
+
+.darkmodeapp {
+  background-color: $dark-grey-background !important;
+}
+
+.lightmodeapp {
+  background-color: $light-background;
 }

@@ -50,25 +50,22 @@ function App() {
   }
 
   useEffect(() => {
-    console.log("Is logged in: ", loggedIn)
-  }, [loggedIn])
+    console.log("Is logged in: ", loggedIn);
+  }, [loggedIn]);
 
+  useEffect(() => {
+    console.log("user updated ", userState);
+  }, [userState]);
+
+  console.log(userData)
   return (
-    <div className="App">
+    
       <UserContext.Provider value={userState}>
+        <div className={userState.preferences.darkMode ? "darkmodeapp App" : "lightmodeapp App"}>
         <Routes>
           <Route
-            exact path={"/wordle-ui"}
-            element={
-              <Home
-                defaultUserObj={defaultUserObj}
-                loggedIn={loggedIn}
-                toggleLogin={toggleLogin}
-              />
-            }
-          />
-          <Route
-            path={"/game"}
+            exact
+            path="game"
             element={
               <Game
                 defaultUserObj={defaultUserObj}
@@ -78,7 +75,8 @@ function App() {
             }
           />
           <Route
-            path={"/login"}
+            exact
+            path="login"
             element={
               <Login
                 loggedIn={loggedIn}
@@ -87,9 +85,21 @@ function App() {
               />
             }
           />
+          <Route
+            exact
+            path="/"
+            element={
+              <Home
+                defaultUserObj={defaultUserObj}
+                loggedIn={loggedIn}
+                toggleLogin={toggleLogin}
+              />
+            }
+          />
         </Routes>
+        </div>
       </UserContext.Provider>
-    </div>
+    
   );
 }
 

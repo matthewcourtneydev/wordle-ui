@@ -157,7 +157,7 @@ const Game = ({ defaultUserObj, toggleLogin }) => {
     ["D", "O", "G", "G", "O"],
     ["R", "E", "L", "A", "X"],
     ["D", "R", "A", "I", "N"],
-    ["T", "H", "U", "M", "P"],
+    ["T", "H", "U", "M", "P"]
   ];
 
   const guessRowsArr = [

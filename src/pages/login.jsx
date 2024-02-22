@@ -54,12 +54,12 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
       }
 
       let response = false;
-      if (emailValue === "mattdc182@gmail.com") {
+      if (emailValue === "demo@gmail.com") {
         response = {
           name: {
-            firstName: "Matthew",
+            firstName: "Demo",
             middleName: "",
-            lastName: "",
+            lastName: "User",
           },
           gameIndex: 3,
           authInfo: {
@@ -67,9 +67,9 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
             isAuthenticated: true,
           },
           contactInfo: {
-            email: "testUser1@gmail.com",
-            username: "testUser1",
-            password: "123",
+            email: "demo@gmail.com",
+            username: "demo_user",
+            password: "demo123",
           },
           preferences: {
             darkMode: true,
@@ -131,8 +131,30 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
             },
             {
               won: true,
-              totalGuesses: 2,
+              totalGuesses: 3,
               guesses: [
+                [
+                  {
+                    letter: "H",
+                    isCorrect: "wrong",
+                  },
+                  {
+                    letter: "E",
+                    isCorrect: "wrong",
+                  },
+                  {
+                    letter: "L",
+                    isCorrect: "almost",
+                  },
+                  {
+                    letter: "L",
+                    isCorrect: "correct",
+                  },
+                  {
+                    letter: "O",
+                    isCorrect: "almost",
+                  },
+                ],
                 [
                   {
                     letter: "H",
@@ -204,7 +226,6 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
     if (retrievedUser.contactInfo.password !== password) {
       togglePasswordError();
     } else {
-      debugger;
       let currentStreak =
         user.games.length && user.games[0].won
           ? retrievedUser.currentStreak + 1
@@ -221,8 +242,6 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
         currentStreak: currentStreak,
         maxStreak: maxStreak,
       };
-
-      debugger;
 
       localStorage.setItem(
         "mdc_wordle_user",
@@ -241,7 +260,7 @@ const Login = ({ setLoggedIn, loggedIn, toggleLogin }) => {
         password: passwordRef.current.value,
       },
     };
-    setLoggedIn(true);
+    toggleLogin(true);
     localStorage.setItem("mdc_wordle_user", JSON.stringify(user));
   }
 
