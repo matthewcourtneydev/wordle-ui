@@ -11,7 +11,7 @@ Welcome to Wordle, a word guessing game that challenges your vocabulary skills a
 ## Play Now!
 Are you ready to put your word skills to the test? Click the button below to start playing Wordle and see how many words you can guess!
 
-[Play Now Button]
+[[Play Now (https://matthewcourtneydev.github.io/wordle-ui/)]](https://matthewcourtneydev.github.io/wordle-ui/)
 
 ## Disclaimer
 This version of Wordle is a fan-made project created by [Your Name] and is not affiliated with or endorsed by the original Wordle game or its creators.
