@@ -1,5 +1,17 @@
-# Front End Wordle Project
+## Overview
+Welcome to Wordle, a word guessing game that challenges your vocabulary skills and logic! This version of Wordle is a unique creation inspired by the popular game. Crafted with originality and creativity, this game offers a fun and engaging experience for players of all ages.
 
-I developed a Wordle application utilizing front-end technologies, including React.js, HTML, and SCSS. Motivated by the desire to challenge myself and demonstrate my proficiency in coding languages, I embarked on this project with the goal of creating a fully functional app from scratch. Unlike tutorial-based projects, this endeavor was a testament to my independent problem-solving skills and comprehensive understanding of the game's mechanics, resulting in a unique and original application.
+## Features
+- **Original Logic:** Developed entirely by myself, this version of Wordle employs original algorithms and logic to generate and evaluate word guesses.
+- **React Implementation:** Built using React, the game provides a smooth and interactive user interface.
+- **Engaging Gameplay:** Test your word knowledge and deduction skills by guessing the hidden word within a limited number of attempts.
+- **Customizable:** The game can be easily customized and expanded with additional features and difficulty levels.
+- **User-Friendly Interface:** Enjoy a clean and intuitive interface designed for seamless gameplay on both desktop and mobile devices.
 
-In conjunction with the front-end project, I have also developed a functional database using MongoDB and Mongoose. Although I intend to deploy and host this site in the future, it is currently operational and undergoing refinement. You are welcome to review the progress and code at [here](https://github.com/matthewcourtneydev/wordle).
+## Play Now!
+Are you ready to put your word skills to the test? Click the button below to start playing Wordle and see how many words you can guess!
+
+[Play Now Button]
+
+## Disclaimer
+This version of Wordle is a fan-made project created by [Your Name] and is not affiliated with or endorsed by the original Wordle game or its creators.
